@@ -1,0 +1,115 @@
+#picture{
+  float: right;
+  height: auto;
+ }    
+#p-heading{
+  font-size: 28pt;
+  text-align: center;
+  font-family: serif;
+  color: green;
+    
+}
+#mmenu
+{
+ margin-top: 80px;   
+}
+.menu-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+.menu-ul li{
+  float: left;
+}
+
+
+.menu-ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: lightgreen;
+}
+body{
+    background-color: rgb(170, 255, 205);
+}
+.page-detail{
+    margin-top:50px;
+    margin-left: 20px;
+    line-height: 1.5;
+    text-align:justify;
+    width:70%;
+    float: left;
+    color:green;
+    padding: 10px;
+}
+.contactinfo{
+    margin-top:100px;
+    margin-right: 20px;
+    line-height: 2;
+    text-align: left;
+    color: rgb(170, 255, 205);
+    float: right;
+    width: 20%;    
+}
+.contactinfo ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+  background-color: green;
+}
+h4{
+    background-color: green;
+    color: rgb(170, 255, 205);
+    text-align: center;
+}
+#academics{
+  color: green;
+  line-height: 2;
+}
+#experience{
+  color: green;
+  line-height: 2;
+}
+h3{  
+    clear: both; 
+    padding: 12px;
+    background-color: green;
+    color: rgb(170, 255, 205);
+    text-align: left;
+  }
+#fb-icon{
+    position: absolute;
+    width:30px;
+    clear: both;
+    
+    margin-left: 48%;
+}
+#ln-icon{
+    position: absolute;
+    width:30px;
+    
+    margin-left: 52%;
+  }
+.footer {
+    position: absolute;
+    background-color:green;
+    height:15px;
+    width: 98%;
+    text-align: center;
+    margin-top: 3%;
+    border:10px ridge green;
+    font-family: serif;
+    color: rgb(170, 255, 205);
+  }
+  a:link{
+    color:white;
+    text-decoration: none;
+  }
