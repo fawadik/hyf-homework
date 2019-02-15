@@ -156,7 +156,7 @@ body {
 .footer{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-basis: 23%;
 	margin-top: 20px;
 	background-color: indigo;
   width: auto;
@@ -174,15 +174,24 @@ body {
   box-sizing: border-box;
   padding-left: 15px;
 }
+.sub-footer:last-child{
+  display: none;
+}
+.sub-footer li {
+  list-style-type: none;
 
+}
+@media only screen and (min-width: 900px){
+  .sub-footer:last-child{
+    display: initial;
+}
 hr{
   height: 1px;
   color: gray;
   background-color: gray;
   border:none;
 }
-.sub-footer li 
-{
+.sub-footer li {
   list-style-type: none;
 
 }
