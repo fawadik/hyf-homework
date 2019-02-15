@@ -124,10 +124,9 @@ body {
 
 .logotypes a img {
   margin: 25px;
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 100px;
+  max-height: 100px;
 }
-
 @media only screen and (min-width: 900px) {
   .box2 {
       display: flex;
@@ -138,11 +137,7 @@ body {
   .logotypes a {
       flex-basis: 23%;
   }
-  .logotypes a img {
-    margin: 25px;
-    max-width: 100px;
-    max-height: 100px;
-  }
+  
   .box2 aside {
       font-size: 10pt;
       flex-basis: 30%;
@@ -153,19 +148,17 @@ body {
       order: 2;
   }
 }
-.footer{
-  display: flex;
-  flex-wrap: wrap;
+.footer{  
   flex-basis: 23%;
 	margin-top: 20px;
 	background-color: indigo;
   width: auto;
-  height: 400px;
+  height: 450px;
   
 }
 .sub-footer{
-	color: white;
-	background:indigo;
+  color: white;
+	background-color:indigo;
   width: 20%;
   height: 250px;
   float: left;
