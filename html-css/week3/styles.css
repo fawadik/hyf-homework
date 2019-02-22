@@ -1,0 +1,107 @@
+html *{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:15px;
+    line-height: 2;
+    
+}
+body{
+    width:80%;
+    margin-left: 10%;
+    border: 1px solid orange;
+    box-shadow: 5px 5px orange;
+    border-radius: 10px;
+}
+label{
+    font-weight: bold;
+}
+.logoimage{
+    float: left;
+    margin-left: -50px;
+}
+#logo{
+    height: 80px;
+    width: 300px;
+}
+.mainmenu li {
+    float: right;
+    list-style-type: none;       
+    margin-right: -3%; 
+    margin-top: 3%;
+}
+.mainmenu li a{
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+}
+.mainmenu li a:hover{
+    color: white;
+    background-color: orange;
+    border-radius: 8px;
+}
+.pagetitle{    
+    clear: both;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left;    
+}
+progress::-webkit-progress-value{
+    background: orange;
+}
+.progressbar{
+    border: 0;
+    width: 100%;
+    height: 18px;
+    margin-left: -3px;
+    border-radius: 9px;
+}
+.textbox{
+    width:50%;
+}
+#country{
+     height: 35px;   
+}
+#signup_newaddress:checked~ .hidden{
+    display: none;
+}
+.signup_button{
+    text-align: right;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.styleimages img{
+    width: 100px;
+    height: 100px;
+}
+.styleimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+.submitbtn{
+    width:100px;
+    background-color: orange;
+    border: 1px ridge orange;
+    border-radius: 5px;
+}
+.submitbtn:hover{
+    background-color: black;
+    color: orange;
+}
+.personalinfo{
+    display:flex;
+    flex-wrap: wrap;
+    flex-flow: column;    
+}
+#month{
+    height: 35px;
+}
+#year{
+    height: 35px;
+}
+#cardtype{
+    height: 35px;
+}

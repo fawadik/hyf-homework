@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Zalando - signup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    </head>
+    <body>
+        <header class="page__header">
+            <div class="logoimage">
+                <img id="logo" src="images/logo.png" alt="zalando-logo">
+            </div>
+            <nav>
+                <div>
+                    <ul class="mainmenu">
+                        <li><a href="">Get the look</a></li>
+                        <li><a href="">Clothes</a></li>
+                        <li><a href="">Shoes</a></li>
+                        <li><a href="">Sports</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Brands</a></li>
+                    </ul>
+                </div>
+            </nav>          
+        </header>
+        <!--End of page_header-->
+        <main>
+            <h1 class="pagetitle">Signup to Zalando.dk</h1>
+            <section>
+                <h1 class="signup_form-title">Step 3/4 - Time to learn about your preferences?</h1>
+                <div>
+                  <h3>Progress</h3>
+                </div>
+                <progress class="progressbar" value="75" max="100"></progress>
+                  <p> 
+                    What kind of items are you interested in offer on?
+                  </p>
+            </section>
+            <form action="step4.html" method="GET" class="signup_form">
+                <div class="items">
+                    <div>
+                        <input id="apparal" type="checkbox"name="apparal">
+                        <label for="apparal">Apparal</label>
+                    </div>
+                    <div>
+                        <input id="jewelry" type="checkbox"name="jewelry">
+                        <label for="jewelry">Jewelry</label>
+                    </div>
+                    <div>
+                        <input id="accessories" type="checkbox"name="accessories">
+                        <label for="accessories">Accessories</label>
+                    </div>
+                    <div>
+                        <input id="shoes" type="checkbox"name="shoes">
+                        <label for="shoes">Shoes</label>
+                    </div>
+                    <div>
+                        <input id="handbags" type="checkbox"name="handbags">
+                        <label for="handbags">Handbags</label>
+                    </div>
+                </div>
+                <p> 
+                    Choose the image that best resembles your style.
+                </p>
+                <div class="styleimages">            
+                    <div>
+                        <input id="longshirts" type="checkbox"name="longshirts">
+                        <label for="longshirts"><img src="images/longshirts.jpg" alt="longshirts"></label>
+                    </div>
+                    <div>
+                        <input id="mensstyling" type="checkbox"name="mensstyling">
+                        <label for="mensstyling"><img src="images/mensstyling.jpg" alt="mensstyling"></label>
+                    </div>
+                    <div>
+                            <input id="mixstuff" type="checkbox"name="mixstuff">
+                            <label for="mixstuff"><img src="images/mixstuff.jpg" alt="mixstuff"></label>
+                    </div>
+                    <div>
+                            <input id="redandwhite" type="checkbox"name="redandwhite">
+                            <label for="redandwhite"><img src="images/redandwhite.jpg" alt="redandwhite"></label>
+                    </div>
+                    <div>
+                            <input id="redshirt" type="checkbox"name="redshirt">
+                            <label for="redshirt"><img src="images/redshirt.jpg" alt="redshirt"></label>
+                    </div>
+                    <div>
+                            <input id="shoulderbags" type="checkbox"name="shoulderbags">
+                            <label for="shoulderbags"><img src="images/shoulderbags.jpg" alt="shoulderbags"></label>
+                    </div>
+                    <div>
+                            <input id="skirts" type="checkbox"name="skirts">
+                            <label for="skirts"><img src="images/skirts.jpg" alt="skirts"></label>
+                    </div>
+                    <div>
+                            <input id="summer" type="checkbox"name="summer">
+                            <label for="summer"><img src="images/summer.jpg" alt="summer"></label>
+                    </div>
+                    <div>
+                            <input id="sweatshirt" type="checkbox"name="sweatshirt">
+                            <label for="sweatshirt"><img src="images/sweatshirt.jpg" alt="sweatshirt"></label>
+                    </div>
+                    <div>
+                            <input id="tshirt" type="checkbox"name="tshirt">
+                            <label for="tshirt"><img src="images/tshirt.jpg" alt="tshirt"></label>
+                    </div>
+                    <div>
+                            <input id="winter" type="checkbox"name="winter">
+                            <label for="winter"><img src="images/winter.jpg" alt="winter"></label>
+                    </div>
+                    <div>
+                            <input id="handbags" type="checkbox"name="handbags">
+                            <label for="handbags"><img src="images/handbags.jpg" alt="handbags"></label>
+                    </div>
+                </div>
+                <div class="signup_button">
+                    <button type="submit" class="submitbtn">
+                        Next Step
+                    </button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

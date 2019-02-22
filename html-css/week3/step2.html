@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Zalando - signup</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    </head>
+    <body>
+        <header class="page__header">
+            <div class="logoimage">
+                <img id="logo" src="images/logo.png" alt="zalando-logo">
+            </div>
+            <nav>
+                <div>
+                    <ul class="mainmenu">
+                        <li><a href="">Get the look</a></li>
+                        <li><a href="">Clothes</a></li>
+                        <li><a href="">Shoes</a></li>
+                        <li><a href="">Sports</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Brands</a></li>
+                    </ul>
+                </div>
+            </nav>          
+        </header>
+        <!--End of page_header-->
+        <main>
+            <h1 class="pagetitle">Signup to Zalando.dk</h1>
+            <section>
+                <h1 class="signup_form-title">Step 2/4 - how can we reach you?</h1>
+                <div>
+                  <h3>Progress</h3>
+                </div>
+                <progress class="progressbar" value="50" max="100"></progress>
+                  <p> 
+                    We will probably need to stay in touch somehow. Let us know how can we reach you.
+                  </p>
+            </section>
+            <form action="step3.html" method="GET" class="signup_form">
+                <div>
+                    <label for="e-mail">E-mail*</label>
+                    <br> 
+                    <input  type="email" name="email" id="e-mail" required class="textbox">
+                </div>                
+                <div>
+                    <label for="telephone">Telephone*</label>
+                    <br>
+                    <input type="tel" name="tel" id="telephone" class="textbox">
+                </div>                
+                <div>
+                    <label for="password">Password*</label>
+                    <br>
+                    <input type="password" name="password" id="password" required minlength="10" class="textbox">
+                </div>                
+                <div>
+                    <label for="rpassword">Re-enter Password*</label>
+                    <br>
+                    <input type="password" name="rpassword" id="rpassword" required minlength="10" class="textbox">
+                </div>
+                <p>I want to Sign up for the newsletter</p>
+                <div class="newsletter">
+                        <input 
+                            type="radio"
+                            name="newsletterchoice"
+                            value="weekly"
+                            id="weekly"
+                              required
+                        />
+                        <label for="weekly" class="weekly-newsletter">Weekly News</label>
+                        <input
+                            type="radio"
+                            name="newsletterchoice"
+                            value="monthly"
+                            id="monthly"
+                            required
+                        />
+                        <label for="monthly" class="monthly-newsletter">Monthly News</label>
+                        <input
+                            type="radio"
+                            name="newsletterchoice"
+                            value="nonews"
+                            id="nonews"
+                            required
+                        />
+                        <label for="nonews" class="no-newsletter">Don't send me News</label>
+                </div>
+                <!-- END of newsletter  -->
+                <div class="signup_button">
+                        <button type="submit" class="submitbtn">
+                                Next Step
+                            </button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
