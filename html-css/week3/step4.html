@@ -38,7 +38,7 @@
                     Please fill in your payment data
                   </p>
             </section>
-            <form>        
+            <form action="finish.html" method="GET">        
                 <label for="ownername">Name on the card*</label>
                 <br> 
                 <input type="text" name="ownername" id="ownername" required class="textbox">
@@ -97,11 +97,11 @@
                 <label for="CCV">CCV</label> 
                 <br>
                 <input type="text" name="ccvnumber" id="ccvnumber" required pattern="[0-9]{3}" class="textbox">
-                
-                <div class="signup_button">
-                        <a href="finish.html">
-                                Finish!</a>                       
-                </div>
+                <button type="submit" class="signup_button">Finish!</button>
+                <!--<div class="signup_button">
+                        <a href="step2.html">
+                                Next Step</a>                       
+                </div>-->
             
             </form>
         </main>

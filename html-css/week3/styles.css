@@ -65,9 +65,7 @@ progress::-webkit-progress-value{
 #signup_newaddress:checked~ .hidden{
     display: none;
 }
-.signup_button{
-    text-align: right;
-}
+
 .items{
     display: flex;
     flex-wrap: wrap;
@@ -84,16 +82,18 @@ progress::-webkit-progress-value{
 .signup_button{ 
     margin-left: 85%;
     margin-bottom: 6%;
+    text-align: center;
     width:100px;
     background-color: orange;
     border: 1px ridge orange;
     border-radius: 5px;
 }
-.signup_button a{
+/*.signup_button a{
+    text-align: center;
     text-decoration: none;
     color: black
-}
-.signup_button:hover{
+}*/
+button:hover{
     background-color: black;
     color: orange;
 }
