@@ -5,7 +5,7 @@ html *{
     
 }
 body{
-    width:80%;
+    width:80%;   
     margin-left: 10%;
     border: 1px solid orange;
     box-shadow: 5px 5px orange;
@@ -81,14 +81,23 @@ progress::-webkit-progress-value{
     flex-wrap: wrap;
     justify-content: space-around;  
 }
-.submitbtn{
+.signup_button{ 
+    margin-left: 85%;
+    margin-bottom: 6%;
     width:100px;
     background-color: orange;
     border: 1px ridge orange;
     border-radius: 5px;
 }
-.submitbtn:hover{
+.signup_button a{
+    text-decoration: none;
+    color: black
+}
+.signup_button:hover{
     background-color: black;
+    color: orange;
+}
+.signup_button a:hover{
     color: orange;
 }
 .personalinfo{
@@ -104,4 +113,11 @@ progress::-webkit-progress-value{
 }
 #cardtype{
     height: 35px;
+}
+.finish{
+    text-align: center;
+}
+.greeting{
+    text-align: center;
+    color:orange;
 }
