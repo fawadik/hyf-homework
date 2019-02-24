@@ -1,2 +1,7 @@
 This is the new file to be created as a homework on github via git on my
 compur
+
+Now i made few changes in the file and i am gonna push the changes to the
+github profile
+
+its gonna be the first exercise for using git on computer and the github
