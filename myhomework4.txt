@@ -1,0 +1,2 @@
+This is new file i creating using git on my computer and i am gonna
+push it on github
