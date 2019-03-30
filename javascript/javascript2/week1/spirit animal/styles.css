@@ -1,0 +1,41 @@
+#heading {
+    background-color: green;
+    border: 5px solid darkgreen;
+    width: 40%;
+    margin-left: 28%;
+    text-align: center;
+    margin-top: 3%;
+}
+.text {
+    border: 5px solid darkgreen;
+    text-align: center;
+    width: 40%;
+    margin-left: 28%;
+}
+body {
+    width: 90%;
+    margin-left: 5%;
+    border: 5px solid darkgreen;
+}
+.mainDiv {
+    border: 5px solid darkgreen;
+    width: 40%; 
+    margin-left: 28%;
+    margin-top: 2%;
+    margin-bottom: 2%;    
+}
+#firstName {
+    width: 81.7%;    
+}
+#btn {
+    text-align: center;
+    margin-left:45%;
+    margin-top: 2%;
+    border: 5px solid darkgreen;
+}
+#generalText {
+    text-align: center;
+}
+#spiritAnimalNameOutput {
+    text-align: center;
+}

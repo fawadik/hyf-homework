@@ -1,0 +1,38 @@
+.list {
+    
+    list-style-type: none;
+    text-align: center;
+}
+
+.mainDiv {
+    width: 40%;
+    background-color:goldenrod;
+    margin-left: 30%;
+    border: 5px brown ridge;
+    border-radius: 20px;
+}
+
+.heading {
+    width: 40%;
+    text-align: center;
+    background-color: goldenrod;
+    border: 5px brown ridge;
+    border-radius: 20px;
+    margin-left: 30%;
+}
+body {
+    border: 5px brown ridge;
+    border-radius: 20px;
+    background-color: burlywood;
+}
+@media only screen and (min-width: 900px) {
+    body {
+        box-sizing: border-box;
+    }
+    .heading {
+        box-sizing: border-box;
+    }
+    .mainDiv {
+        box-sizing: border-box;
+    }
+}
