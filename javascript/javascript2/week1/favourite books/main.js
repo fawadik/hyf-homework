@@ -2,61 +2,61 @@ const bookNames = [{ id: "donquixote",
                      title: "Don Quixote",
                      language: "English",
                      author: "Miguel de Cervantes",
-                     cover: "images/donquixote.jpg"
+                     cover: "donquixote.jpg"
                    },
                    { id: "ulysses",
                      title: "Ulysses",
                      language: "English",
                      author: "Joyce",
-                     cover: "images/ulysses.jpg"
+                     cover: "ulysses.jpg"
                    },
                    { id: "mobydick",
                      title:"Moby Dick",
                      language: "Persian",
                      author: "Herman Melville",
-                     cover: "images/mobydick.jpg"                     
+                     cover: "mobydick.jpg"                     
                    },
                    { id: "hamlet",
                      title:"Hamlet",
                      language: "German",
                      author: "William Shakespeare",
-                     cover: "images/hamlet.jpg"
+                     cover: "hamlet.jpg"
                    }, 
                    { id: "warandpeace",
                      title:"War and Peace",
                      language: "English",
                      author:"Leo Tolstoy",
-                     cover: "images/warandpeace.jpg"
+                     cover: "warandpeace.jpg"
                    },
                    { id: "theodyssey",
                      title:"The Odyssey",
                      language: "French",
                      author: "Homer",
-                     cover: "images/odyssey.jpg"
+                     cover: "odyssey.jpg"
                    },
                    { id: "thedivinecomedy",
                      title:"The Divine Comedy",
                      language: "German",
                      author: "Dante Alighieri",
-                     cover: "images/divinecomedy.jpg"
+                     cover: "divinecomedy.jpg"
                    },
                    { id: "madamebovary",
                      title:"Madame Bovary",
                      language: "Italian",
                      author: "Gustave Flaubert",
-                     cover: "images/madamebovary.jpg"
+                     cover: "madamebovary.jpg"
                    },
                    { id: "theiliad",
                      title:"The Iliad",
                      language: "Spanish",
                      author: "Homer",
-                     cover: "images/iliad.jpg"
+                     cover: "iliad.jpg"
                    },
                    { id: "lolita",
                      title: "Lolita",
                      language: "English",
                      author: "Vladimir Nabokov",
-                     cover: "images/lolita.jpg"
+                     cover: "lolita.jpg"
                    }];
 var heading = document.createElement("h1");
     heading.setAttribute("class", "heading");
