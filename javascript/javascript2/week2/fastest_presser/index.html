@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Fastest Presser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css"> 
+    </head>
+    <body>
+        <div id="mainSection">
+            <div id="main">
+                <h1 id = "heading">Fastest Presser</h1>
+                <h4 id = "text">Please enter the desired time in seconds (max 30 secs)</h4>
+                <input type="number" id="timer" placeholder="Enter time">
+                <input type="button" name="button" value="Start Game" id="startButton" onclick="startGame()">
+                <p id="timeLeft"></p>
+            </div>
+            <div id="playerSection">
+                <div id="playerS">
+                    <h2 id="player1">Press S</h2>
+                </div>
+                <div id="playerL">
+                    <h2 id="player2">Press L</h2>
+                </div>            
+            </div>
+            <div id="winnerInfo">
+                    <p id="result">Result:</p>
+                </div>     
+            <div id="restart">
+                <input type="button" name="button" value="Restart" id="restartButton">
+            </div>            
+        </div> 
+          
+        <script src="main.js"></script>        
+    </body>
+</html>
