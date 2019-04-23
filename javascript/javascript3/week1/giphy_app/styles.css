@@ -1,0 +1,12 @@
+.getGif {
+    text-align: center;
+}
+#searchedGif {
+    color: blue;
+}
+#gifsDiv {
+    display: flex;
+    align-content: space-between;
+    margin-left: 7%;
+    margin-top: 5%;
+}

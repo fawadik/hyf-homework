@@ -1,0 +1,43 @@
+[{
+		"orderName": "firstorder",
+		"orderID": 1,
+		"price": 300,
+		"drinks": ["cola", "water"],
+		"extras": ["barbqsauce", "currysauce"]
+	},
+	{
+		"orderName": "secondorder",
+		"orderID": 2,
+		"price": 450,
+		"drinks": ["fanta", "lemonade"],
+		"extras": ["salad", "pasta"]
+	}
+ {
+		"orderName": "thirdorder",
+		"orderID": 3,
+		"price": 360,
+		"drinks": ["pinacolada", "bubblewater"],
+		"extras": ["barbqsauce", "tomatosauce"]
+	},
+	{
+		"orderName": "forthorder",
+		"orderID": 4,
+		"price": 950,
+		"drinks": ["hotcoffee", "lemonade"],
+		"extras": ["salad", "chickenpetties"]
+	}
+{
+		"orderName": "fifthorder",
+		"orderID": 5,
+		"price": 500,
+		"drinks": ["cola", "cocktail"],
+		"extras": ["strawberries", "icecream"]
+	},
+	{
+		"orderName": "sixthorder",
+		"orderID": 6,
+		"price": 1000,
+		"drinks": ["redwine", "beer"],
+		"extras": ["nachos", "pastasauce"]
+	}
+]

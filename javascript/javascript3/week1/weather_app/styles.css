@@ -1,0 +1,9 @@
+.getCityWeather {
+    text-align: center;
+}
+.currentWeather {
+    text-align: center;
+}
+#image {
+    width: 100px;
+}
