@@ -10,7 +10,7 @@ function getSearchedGif() {
     let gifsDiv = document.getElementById("gifsDiv");
     gifsDiv.innerHTML = "";
 
-    fetch('http://api.giphy.com/v1/gifs/search?q='+input.value+'&api_key=erlcLeOO7jsiKiKvYirH8mPhJht7Ye42&limit=5')
+    fetch('https://api.giphy.com/v1/gifs/search?q='+input.value+'&api_key=erlcLeOO7jsiKiKvYirH8mPhJht7Ye42&limit=5')
     .then(response => response.json())
     .then((response) => {
         console.log(response);
