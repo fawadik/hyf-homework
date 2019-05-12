@@ -1,0 +1,7 @@
+#myCanvas {
+    border: 2px solid green;
+    width: 90%;
+    height: 50%;
+    margin-left: 5%;
+    border-radius: 8px;    
+}
