@@ -1,0 +1,22 @@
+#heading {
+    text-align: center;
+    font-family: serif;
+    color: crimson;
+    border: 3px ridge royalblue;
+    border-radius: 8px;
+}
+
+#fellows {
+    color: darkgreen;
+    font-family: serif;
+    font-size: 1.5em;
+}
+#innerli {
+    font-size: 1em;
+    color: darkblue;
+}
+
+#main {
+    border: 3px ridge royalblue;
+    border-radius: 8px;
+}

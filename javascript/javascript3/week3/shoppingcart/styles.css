@@ -1,0 +1,66 @@
+#elements {
+    list-style-type: none;
+}
+#heading {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;   
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    background-color: aquamarine;
+    border-radius: 8px;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 1.5em;
+   
+
+}
+
+#total {
+    margin-top: 2%;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    border: 2px solid greenyellow;
+    background-color: aquamarine;
+    border-radius: 8px;
+}
+#name {
+    width: 20%;
+    text-align: left;
+    border: 2px solid greenyellow;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+#price {
+    width: 20%;
+    text-align: right;
+    border: 2px solid greenyellow;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+#distance {
+    width: 20%;
+    text-align: center;
+}
+#userName {
+    width: 20%;
+    margin-left: 40%;
+    border: 2px solid greenyellow;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+#emailID {
+    width: 20%;
+    margin-left: 40%;
+    border: 2px solid greenyellow;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
