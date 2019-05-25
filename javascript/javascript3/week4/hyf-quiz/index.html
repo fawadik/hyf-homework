@@ -10,12 +10,18 @@
             <h1>The fantastical, funny, weird, superduper and awesome <span>HYF quiz</span></h1>
         </header>
         <main>
-            <p class="loading">loading...</p>
+            <p id="loading" class="loading">loading...</p>
+            <p id="timer" ></p>
+            <div id="level">
+                <p id="difficulty">Choose difficulty level : </p>
+                <button id="easyLevel" onclick="easyDifficultyLevelSelector()">Easy</button>
+                <button id="hardLevel" onclick="hardDifficultyLevelSelector()">Hard</button>
+            </div>
             <section class="questions">
                 <ul>
                     
                 </ul>
-                <button>
+                <button onclick="buttonForScore()">
                     Get score
                 </button>
             </section>

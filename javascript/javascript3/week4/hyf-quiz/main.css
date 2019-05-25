@@ -95,6 +95,47 @@ ul li h1, ul li p {
     outline: none;
 }
 
+#easyLevel {
+    margin: 0 auto;
+    background-color: #02C39A;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px 0 rgba(57,55,56,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+#hardLevel {
+    margin: 0 auto;
+    background-color: #02C39A;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px 0 rgba(57,55,56,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+#level {
+    margin-left: 35%;
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+
+
 form button:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 4px 0 rgba(57,55,56,0.15);

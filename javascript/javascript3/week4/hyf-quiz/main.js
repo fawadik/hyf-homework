@@ -1,10 +1,14 @@
-fetch('https://gist.githubusercontent.com/benna100/c9c38faebea1526fb4e6b6b896a1dc94/raw/9468c385bfb422620676b3669509b0a59b326c42/quiz-questions.json')
+fetch('https://gist.githubusercontent.com/fawadik/18bc6acf80fe492374587af4db310fd7/raw/b377318c79fcb5192acbd351a4cdd183238903f7/questions.json')
     .then(response => response.json())
     .then((response) => {
         console.log(response);        
     });
 
 
+let easyButton = document.getElementById("easyLevel");
+let hardButton = document.getElementById("hardLevel");
+let heading = document.getElementById("heading");
+let timer = document.getElementById("timer");
 class Quiz {
     constructor (name) {
         this.name = name;
@@ -12,14 +16,20 @@ class Quiz {
 
     getQuestions () {
         
-         return fetch('https://gist.githubusercontent.com/benna100/c9c38faebea1526fb4e6b6b896a1dc94/raw/9468c385bfb422620676b3669509b0a59b326c42/quiz-questions.json')
+         return fetch('https://gist.githubusercontent.com/fawadik/18bc6acf80fe492374587af4db310fd7/raw/b377318c79fcb5192acbd351a4cdd183238903f7/questions.json')
             .then(response => response.json());       
-    }    
-
-       
-
-    renderQuestions (questionsArray) {
-        questionsArray.forEach(question => {
+    }   
+    
+    renderEasyQuestions (questionsArray) {
+        hardButton.style.display = "none";        
+        function timerInSeconds() {
+        let seconds = 0; 
+        seconds += 1;       
+        timer.innerText = "Time in seconds : "+seconds;        
+        }        
+        let easyQuestions = questionsArray.filter(question => question.difficulty === "easy");        
+        console.log(easyQuestions);
+        easyQuestions.forEach(question => {
 
             function addQuiz() {
                 var node = document.createElement("LI");               
@@ -30,14 +40,19 @@ class Quiz {
             }
 
             function addText() {
-                return `<p>${question.title} : ${question.content}</p>`;             
+                
+                return `<p>${question.title} : ${question.content}</p>`;
+                          
             }
 
             function addLabel() {
+                
                return `<label for="answer-select">Choose an answer:</label>`;
+            
             }
 
             function addOptions() {
+                
                 var openSelect = `<select id="answer-select">`
                 var closeSelect = `</select">`
                 var options = "";
@@ -45,6 +60,50 @@ class Quiz {
                     options += `<option data-is-answer="${option.correct}" value="${option.content}">${option.content.replace(/ *\([^)]*\) */g, "")}</option>`
                 })                
                 return openSelect + options + closeSelect;
+            
+            }
+          
+            addQuiz();
+              
+        })
+        setInterval(timerInSeconds(), 1000); 
+    
+    }
+    renderHardQuestions (questionsArray) { 
+        easyButton.style.display = "none";   
+        let hardQuestions = questionsArray.filter(question => question.difficulty === "hard");        
+        hardQuestions.forEach(question => {
+
+            function addQuiz() {
+                var node = document.createElement("LI");               
+                node.innerHTML = addText();
+                node.innerHTML += addLabel();
+                node.innerHTML += addOptions();
+                document.querySelector('ul').appendChild(node); 
+            }
+
+            function addText() {
+                
+                return `<p>${question.title} : ${question.content}</p>`;
+                          
+            }
+
+            function addLabel() {
+                
+               return `<label for="answer-select">Choose an answer:</label>`;
+            
+            }
+
+            function addOptions() {
+                
+                var openSelect = `<select id="answer-select">`
+                var closeSelect = `</select">`
+                var options = "";
+                question.options.forEach(option => {
+                    options += `<option data-is-answer="${option.correct}" value="${option.content}">${option.content.replace(/ *\([^)]*\) */g, "")}</option>`
+                })                
+                return openSelect + options + closeSelect;
+            
             }
           
             addQuiz();   
@@ -66,12 +125,23 @@ class Quiz {
 var quiz = new Quiz('myQuiz');
 console.log(quiz)
 
+let easyLevel = document.getElementById("easyLevel");
+//document.querySelector(easyLevel).addEventListener("click", difficultyLevelSelector());
+
+function easyDifficultyLevelSelector() {
 quiz.getQuestions().then(data => {
-    quiz.renderQuestions(data);
+    quiz.renderEasyQuestions(data);
     quiz.calculateScore();
 })
-
-document.querySelector('button').addEventListener('click', function () {
-   alert('Your score is ' + quiz.calculateScore())
+}
+function hardDifficultyLevelSelector() {
+    quiz.getQuestions().then(data => {
+        quiz.renderHardQuestions(data);
+        quiz.calculateScore();
 })
-
+}
+    function buttonForScore() {
+    //document.querySelector('btn').addEventListener('click', function () {
+       alert('Your score is ' + quiz.calculateScore());
+    
+}
