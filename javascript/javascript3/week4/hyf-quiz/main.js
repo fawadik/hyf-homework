@@ -3,8 +3,6 @@ fetch('https://gist.githubusercontent.com/fawadik/18bc6acf80fe492374587af4db310f
     .then((response) => {
         console.log(response);        
     });
-
-
 let easyButton = document.getElementById("easyLevel");
 let hardButton = document.getElementById("hardLevel");
 let heading = document.getElementById("heading");
@@ -143,5 +141,5 @@ function hardDifficultyLevelSelector() {
     function buttonForScore() {
     //document.querySelector('btn').addEventListener('click', function () {
        alert('Your score is ' + quiz.calculateScore());
-    
+    //..................................
 }
