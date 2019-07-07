@@ -25,8 +25,7 @@ CREATE TABLE IF NOT EXISTS `cph_cricket_club_db`.`matches` (
   `looser` VARCHAR(255) NOT NULL,
   `date` DATETIME NULL DEFAULT NULL,
   `status_id` INT(10) UNSIGNED NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_status` (`status_id` ASC) VISIBLE,
+  PRIMARY KEY (`id`),  
   CONSTRAINT `fk_status`
     FOREIGN KEY (`status_id`)
     REFERENCES `cph_cricket_club_db`.`status` (`id`)
@@ -57,8 +56,7 @@ CREATE TABLE IF NOT EXISTS `cph_cricket_club_db`.`players` (
   `id` INT(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(255) NOT NULL,
   `team_id` INT(10) UNSIGNED NOT NULL,
-  PRIMARY KEY (`id`),
-  INDEX `fk_team` (`team_id` ASC) VISIBLE,
+  PRIMARY KEY (`id`),  
   CONSTRAINT `fk_team`
     FOREIGN KEY (`team_id`)
     REFERENCES `cph_cricket_club_db`.`teams` (`id`)
@@ -76,8 +74,7 @@ CREATE TABLE IF NOT EXISTS `cph_cricket_club_db`.`points_table` (
   `match_id` INT(10) UNSIGNED NOT NULL,
   `team_id` INT(10) UNSIGNED NOT NULL,
   `points` INT(10) UNSIGNED NOT NULL,
-  PRIMARY KEY (`match_id`, `team_id`),
-  INDEX `fk_team_match_team` (`team_id` ASC) VISIBLE,
+  PRIMARY KEY (`match_id`, `team_id`), 
   CONSTRAINT `fk_match_team_match`
     FOREIGN KEY (`match_id`)
     REFERENCES `cph_cricket_club_db`.`matches` (`id`)
