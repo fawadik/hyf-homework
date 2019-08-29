@@ -2,13 +2,19 @@ import React from "react"
 
 
 class TodoItem extends React.Component {
+     
     render() {
+        const doneStyle = {            
+            textDecoration: "line-through"
+        }
         return (
             <div className="todo-item">
                 <input 
-                    type="checkbox"                    
+                    type="checkbox"
+                    checked={this.props.item.done}
+                    onChange={() => this.props.handleChange(this.props.item.id)}                    
                 />
-                <p>{this.props.item.description}</p>
+                <p style={this.props.item.done ? doneStyle: null}>{this.props.item.description}</p>
             </div>
         )
     }
